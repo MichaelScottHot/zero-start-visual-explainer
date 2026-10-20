@@ -1,0 +1,14 @@
+interface:
+  display_name: Zero-Start Visual Explainer
+  short_description: 从零讲清新知识，用清晰分区、完整推导和可探索的例子帮助理解
+  default_prompt: 请用 $zero-start-visual-explainer 从零解释这个主题。先给结论和简短路线图，完整展示关键理由与步骤；有对话内渲染能力时，把整篇解释放进
+    Skill 指定的浅蓝、白色圆角阅读界面，并实际套用其 CSS 样式，不要只输出普通 Markdown 或通用卡片。结尾问一个具体的理解检查问题。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
