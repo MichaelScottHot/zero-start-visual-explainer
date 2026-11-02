@@ -3,97 +3,133 @@
 # 🧭 Zero-Start Visual Explainer
 
 ### 从“我没学过”开始，把陌生问题讲到能用。
+### Start from zero, follow the steps, and learn how to use what you understand.
 
-Explain unfamiliar ideas from zero, with the steps and examples needed to use them.
+![类型 / Type](https://img.shields.io/badge/TYPE-AI%20Skill-7257d5?style=flat-square)
+![主题 / Topics](https://img.shields.io/badge/TOPICS-AI%20%2F%20Logic%20%2F%20Tools-3478c8?style=flat-square)
+![方法 / Method](https://img.shields.io/badge/METHOD-Step--by--step-159578?style=flat-square)
+![语言 / Languages](https://img.shields.io/badge/LANG-中文%20%2F%20English-64748B?style=flat-square)
 
-![Type](https://img.shields.io/badge/type-AI%20Skill-7257d5)
-![Input](https://img.shields.io/badge/input-question%20%2F%20problem-3478c8)
-![Output](https://img.shields.io/badge/output-reasoning%20%2B%20example-159578)
-
-[它解决什么](#它解决什么) · [怎么讲清楚](#怎么讲清楚) · [适合的问题](#适合的问题) · [示例](#示例) · [怎么使用](#怎么使用) · [边界与质量](#边界与质量)
+[查看 Skill 文件 / View the Skill](SKILL.md)
 
 </div>
 
 ---
 
-## 一句话介绍
+## 目录 / Contents
 
-Zero-Start Visual Explainer 从读者还不熟悉的地方开始，补上必要的前置知识，一步步解释“发生了什么、为什么这一步成立、最后怎样用到实际问题里”。适合 AI 概念、工具、岗位、研究、数学和逻辑推理等主题。
+[它解决什么 / Why it helps](#why-it-helps) · [讲解路径 / How it explains](#how-it-explains) · [使用案例 / Example](#example) · [适合的问题 / Good for](#good-for) · [如何使用 / How to use](#how-to-use) · [文件说明 / Files](#files) · [边界与质量 / Boundaries](#boundaries)
 
-**先给核心结论 → 补上必要前置 → 展开推理 → 用具体例子走一遍 → 带走一个结论**
+<a id="why-it-helps"></a>
+## 它解决什么 / Why it helps
 
-## 它解决什么
+很多解释直接给出结论，却默认读者已经认识一堆术语；有些回答把推理压成几句口诀，让人知道“要做什么”，却不知道每一步为什么成立。
 
-很多解释看起来有答案，却默认读者已经认识一堆术语；也有些回答把结论压成几句口诀，让人知道“要做什么”，却不知道每一步为什么成立。
+Many explanations jump to the answer and assume you already know the jargon. Others compress the reasoning into a few tips, telling you what to do without showing why each step works.
 
-这个 Skill 会把缺失的台阶补出来：新术语先用大白话解释，关键推理不跳步，抽象概念尽量配一个从输入到结果的具体例子。在当前环境支持视觉呈现时，它会把完整讲解放进清晰的阅读界面；不支持时，则用结构清楚的文字和图表说明。
+**Zero-Start Visual Explainer** 从当前问题真正需要的前置知识开始，解释新术语，补全关键推理，并用具体例子展示知识如何用起来。
 
-| | 快速结论式回答 | Zero-Start Visual Explainer |
-| --- | --- | --- |
-| 面向读者 | 默认读者知道背景 | 从必要的前置知识开始 |
-| 讲解方式 | 给结论或一串术语 | 展示事实、推理步骤和每一步的理由 |
-| 例子作用 | 作为补充 | 用具体输入、判断和结果走完机制 |
-| 适合目标 | 快速查一个事实 | 真正弄懂、比较或照着完成一件事 |
+**Zero-Start Visual Explainer** starts with only the background needed for your question. It explains new terms, fills in the reasoning, and uses a worked example to show how the idea applies.
 
-## 怎么讲清楚
+<a id="how-it-explains"></a>
+## 讲解路径 / How it explains
 
-1. **先确定问题边界。** 要讲一个概念、一道题、一个工具流程，还是几者结合。
-2. **找出缺的第一块知识。** 从读者第一次可能卡住的术语或步骤开始解释。
-3. **把推理连起来。** 展示输入或已知事实，说明中间的判断，再给出结果。
-4. **走一个具体例子。** 让读者看见同一套思路如何用于一个实际情境。
-5. **检查是否真的讲通。** 用一句简短的问题，让读者试着把概念用到相邻情境。
+**问题与已知 → 必要前置 → 每一步的理由 → 具体例子 → 可带走的结论**
 
-## 适合的问题
+**Question and givens → needed background → reasons for each step → worked example → takeaway**
 
-| 主题 | 读者会看到什么 |
+| 你提出的问题 / Your question | 讲解会补上的内容 / What the explanation covers |
 | --- | --- |
-| AI 或陌生概念 | 日常问题、概念定义、组成关系、运行过程与边界 |
-| 逻辑或数学题 | 已知条件、每一步推导的理由、结果核对 |
-| 工具或工作流 | 使用前提、实际输入、操作决策、产出与异常处理 |
-| 岗位或协作方式 | 每个角色接收什么、决定什么、交付什么、怎样验收 |
-| 研究或复杂判断 | 问题、证据、推论、不确定性与实际影响 |
+| AI 或陌生概念 / An AI or unfamiliar concept | 日常问题、概念定义、组成关系、运行过程与边界 / Familiar need, plain definition, parts, how it works, and its limits |
+| 逻辑或数学题 / A logic or math problem | 已知条件、每一步推导的理由、结果核对 / Givens, the reason for each deduction, and a consistency check |
+| 工具或工作流 / A tool or workflow | 前提、实际输入、操作决策、产出与异常处理 / Prerequisites, real input, decisions, output, and failure handling |
+| 岗位或协作方式 / A role or collaboration process | 每个人接收、决定、交付和验收什么 / What each person receives, decides, hands off, and checks |
+| 研究或复杂判断 / Research or a complex judgment | 证据、推论、不确定性和实际影响 / Evidence, inference, uncertainty, and practical implications |
 
-## 示例：从零理解复利
+<a id="example"></a>
+## 使用案例 / Example
 
-**问题：**“复利为什么会越滚越快？”
+**问题 / Question**
 
-**讲解路径**：先说明本金和利息是什么，再演示“下一轮的利息也会产生利息”。之后用一笔假设金额和一个明确注明的假设利率，逐年算出本金如何变化；最后对比单利，指出结果依赖利率、时间和是否持续投入。
+> 复利为什么会越滚越快？  
+> Why does compound interest grow faster over time?
 
-这个示例说明讲解方法，不构成投资建议；数字也应标为假设，不能当成收益预测。
+**从一个明确的假设开始 / Start with a stated assumption**
 
-## 怎么使用
+假设本金是 ¥1,000，年利率为 10%，不再追加资金。以下只是用来解释数学关系的假设数字，不是收益预测或投资建议。
 
-把仓库下载并放入你的 AI 工具支持的 Skill 目录，然后描述你想学的内容，以及你希望解释到什么程度。
+Assume a starting balance of ¥1,000, a 10% annual rate, and no additional deposits. These figures illustrate the math; they are not a return forecast or investment advice.
 
-可以这样提问：
+| 年份 / Year | 年初金额 / Starting balance | 当年利息 / Interest earned | 年末金额 / Ending balance |
+| --- | ---: | ---: | ---: |
+| 第 0 年 / Year 0 | — | — | ¥1,000 |
+| 第 1 年 / Year 1 | ¥1,000 | ¥100 | ¥1,100 |
+| 第 2 年 / Year 2 | ¥1,100 | ¥110 | ¥1,210 |
 
-```text
-Use zero-start-visual-explainer to explain compound interest from zero.
-Show the prerequisites, each step in the reasoning, and one worked example.
-Use an easy-to-read visual layout when available, then ask one short
-question that helps me apply the idea.
-```
+第一年赚到的 ¥100 留在账户里，所以第二年的 10% 是按 ¥1,100 计算，得到 ¥110。第二年因此比第一年多赚 ¥10。若按单利计算，两年都只按原始的 ¥1,000 计算，期末会是 ¥1,200。
 
-适合学习陌生概念、比较方案、跟着推导一道题、理解研究与工作流程，或在解释太抽象、跳步太多时重新讲一遍。
+The first year's ¥100 stays in the balance. The next 10% is calculated on ¥1,100, so the second year's interest is ¥110—¥10 more than the first year. With simple interest, both years use the original ¥1,000, leaving ¥1,200 after two years.
 
-## 边界与质量
+**关键差别 / The key difference:** 复利会把已产生的利息也算进下一轮的计算基础。  
+With compound interest, previously earned interest is included in the next calculation.
 
-- “从零开始”指补足当前问题需要的前置，不代表每个回答都要拉成长篇课程。
-- 示例、假设、来源事实和推论会区分；时效性或依赖来源的内容需要核实。
-- 视觉排版取决于当前 AI 环境是否支持对应的呈现能力；纯文本环境会保留清晰的步骤和结构，不会假称有可点击界面。
-- 讲解和理解检查帮助读者学习，不代表已经证明读者掌握或能长期记住。
-- 本仓库当前没有指定开源许可证；公开可见不等于已授权复制、修改或再发布。
+<a id="good-for"></a>
+## 适合的问题 / Good for
 
-## 仓库内容
+- 从零理解 AI、产品、科学或其他陌生概念。  
+  Learn an unfamiliar topic such as AI, product, or science from the ground up.
+- 比较方案，弄清它们分别适合什么情况。  
+  Compare options and understand when each one fits.
+- 跟着完整步骤解一道逻辑题或数学题。  
+  Follow the complete reasoning for a logic or math problem.
+- 看懂研究、工具、岗位或工作流程。  
+  Understand research, tools, roles, or workflows.
+- 重新解释一段太抽象、跳步太多或术语太密的内容。  
+  Rework an explanation that feels too abstract, skips steps, or uses too much jargon.
 
-| 文件 | 用途 |
+<a id="how-to-use"></a>
+## 如何使用 / How to use
+
+在支持 Skill 的 AI 工具中启用仓库里的 Skill，然后给出你想理解的问题。  
+Enable the Skill from this repository in an AI tool that supports Skills, then provide the question you want to understand.
+
+~~~text
+请用 $zero-start-visual-explainer 从零解释复利。
+先解释必要概念，逐步说明每一步为什么成立，
+再用一组明确标为假设的数据演示，并检查结论。
+
+Use $zero-start-visual-explainer to explain compound interest from zero.
+Explain the prerequisites and why each step follows.
+Show one worked example with clearly labeled hypothetical numbers,
+then check the result.
+~~~
+
+对于需要详细推理的主题，如果当前 AI 环境支持阅读界面，它会按 Skill 规范组织完整讲解；纯文本环境则保留清晰步骤和结构。
+
+For topics that need detailed reasoning, the Skill uses its specified reading layout when the AI environment supports it. In a text-only environment, it keeps the steps and structure clear.
+
+<a id="files"></a>
+## 文件说明 / Files
+
+| 文件 / File | 用途 / Purpose |
 | --- | --- |
-| [`SKILL.md`](SKILL.md) | 从零讲解的流程、视觉呈现规范和质量检查 |
-| [`references/presentation.md`](references/presentation.md) | 已确认的阅读界面结构和版式规范 |
-| [`assets/explainer.css`](assets/explainer.css) | 浅色阅读界面的样式表 |
-| [`agents/openai.yaml`](agents/openai.yaml) | Skill 名称、简介与默认提示 |
-| [`assets/icon.svg`](assets/icon.svg) | Skill 图标 |
+| [SKILL.md](SKILL.md) | 讲解流程、视觉呈现规范和质量检查 / Explanation workflow, visual presentation rules, and quality checks |
+| [references/presentation.md](references/presentation.md) | 已确认的阅读界面结构和版式 / Approved reading layout and structure |
+| [assets/explainer.css](assets/explainer.css) | 浅色阅读界面的样式表 / Styles for the light reading interface |
+| [agents/openai.yaml](agents/openai.yaml) | Skill 名称、简介与默认提示 / Skill name, description, and default prompt |
+| [assets/icon.svg](assets/icon.svg) | Skill 图标 / Skill icon |
 
----
+<a id="boundaries"></a>
+## 边界与质量 / Boundaries
 
-For the full instructions, see [`SKILL.md`](SKILL.md). The goal is not just a shorter answer; it is an explanation a reader can follow and apply.
+- “从零开始”是补足当前问题需要的前置知识，不代表每个问题都要变成长篇课程。  
+  “From zero” means adding the background this question needs; it does not mean turning every answer into a long lesson.
+- 示例、假设、来源事实和推论会区分；依赖来源或时效的信息需要核实。  
+  Examples, assumptions, source-based facts, and inferences are kept distinct; time-sensitive or source-dependent claims need verification.
+- 视觉排版取决于当前 AI 环境是否支持；纯文本环境不会假称有可点击界面。  
+  Visual layouts depend on the AI environment; text-only environments are not described as having interactive features.
+- 讲解和理解检查支持学习，但不证明读者已经掌握或长期记住。  
+  An explanation and a comprehension check support learning; they do not prove mastery or long-term retention.
+- 本仓库当前没有指定开源许可证；公开可见不等于已授权复制、修改或再发布。  
+  This repository currently has no specified open-source license. Public visibility does not grant permission to copy, modify, or redistribute it.
+
